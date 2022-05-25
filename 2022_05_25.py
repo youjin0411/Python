@@ -167,3 +167,28 @@ print('*'*30)
 print(" 이름 : 김유진")
 print("전화번호 : 010-2332-2323")
 print("*"*30)
+print()
+
+# 문자열 인덱싱
+a = "Korea IT"
+print(a[0], a[1], a[2], a[3], a[4], [5], a[6], a[7])
+# 공백도 문자로 인식한다.
+
+# 2.문제
+# hello 문자를 입력받아서, olleh로 출력해보자
+b = input("hello 입력 : ")
+print(b)
+print(b[4], b[3], b[2], b[1], b[0])
+
+# 문자열 슬라이싱
+a = "Korea Academy"
+
+# korea
+print(a[0:5])
+print(a[:5])
+print(a[6:])
+
+# 문자열 슬라이싱으로 수정해보기
+str = "prigraming"
+print(str[:2], 'o', str[3:7],
+      m), str[7:]
