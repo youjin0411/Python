@@ -54,3 +54,17 @@ elif x < 100:
     print('두 자리 수 ')
 else:
     print("세 자리 수 ")
+
+print()
+
+number = 10
+if number > 20:
+    print("number가 20보다 큽니다.")
+elif number < 15:
+    print("number가 15보다 작습니다.")
+elif number > 5 and number < 15:
+    print('number가 5보다 크거나 15보다 작습니다.')
+elif number > 100 or number == 10:
+    print("number가 100보다 크거나 또는 number의 값이 10입니다. ")
+elif not number > 100:
+    print("number가 100ㅂ다 큰 경우가 아닌 경우 출력합니다. ")
