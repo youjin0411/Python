@@ -7,16 +7,18 @@ print("성별 : "+number[7])
 
 l1 = [1, 3, 5, 4, 2]
 print("원본 :", l1)
-l1.sort()
-l1.reverse()
+l1.sort()  # 작은 수부터 정렬
+l1.reverse()  # 역수 큰 수부터 정렬
 print("결과 : ", l1)
 print()
 
 text = ["Life", "is", "too", "short"]
 #print(text[0], text[1], text[2], text[3])
 print(" ".join(text))
+# Life is too short
 print()
 
+# 1,2,3,4
 a = (1, 2, 3)
 #y = 4,
 #print(a + y)
