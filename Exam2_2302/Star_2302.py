@@ -1,24 +1,24 @@
 # 2302 김유진
 from posixpath import split
-#등급별 갯수 출력하기 
-a = 0 #>= 90
-b = 0 #>= 80
-c = 0 #>= 70
-d = 0 #>= 70
-e = 0 #나머지
+# 등급별 갯수 출력하기
+a = 0  # >= 90
+b = 0  # >= 80
+c = 0  # >= 70
+d = 0  # >= 70
+e = 0  # 나머지
 
 num = input("점수 입력 : ")
-result = num.split(" ") #입력받은 점수 공백을 기준으로 자르기
-max = int(result[0]) #최대값 초기화
-min = int(result[0]) #최소값 초기화 
-for i in range(0, len(result)): #입력한 점수 갯수만큼 반복
+result = num.split(" ")  # 입력받은 점수 공백을 기준으로 자르기
+max = int(result[0])  # 최대값 초기화
+min = int(result[0])  # 최소값 초기화
+for i in range(0, len(result)):  # 입력한 점수 갯수만큼 반복
     if int(result[i]) >= 90:
         a = a + 1
     elif int(result[i]) >= 80:
         b = b + 1
     elif int(result[i]) >= 70:
         c = c + 1
-    elif int(result[i]) >= 70:
+    elif int(result[i]) >= 60:
         d = d + 1
     else:
         e = e + 1
