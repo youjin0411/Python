@@ -5,3 +5,4 @@ def gugudan(n):
 
 if __name__ == "__main__":
     gugudan(3)
+print(__name__)
