@@ -2,22 +2,6 @@ from winreg import HKEY_LOCAL_MACHINE
 from hashlib import new
 from asyncio import new_event_loop
 
-# 조건문으로 고령을 구하기
-age = 10
-if age >= 60:
-    print('고령')
-else:
-    print('성인')  # 출력 결과 : 성인
-print()
-
-# 우산을 가져갈지 안 가져갈지
-weather = True
-if weather:
-    print('우산을 가져가라')
-else:
-    print('우산을 가져가지 마라')
-print()
-
 # 리스트, 튜플, 문자열 안에 들어있는지 없는지
 print('a' in ['a', 'b', 'c'])  # 리스트
 print('a' in ('a', 'b', 'c'))  # 튜플
@@ -34,18 +18,6 @@ else:
     print("그냥 집에 간다.")
 print()
 
-# 성적을 입력받아 등급을 구하시오
-score = int(input('성적을 입력하세요'))
-if score >= 90:
-    print('A')
-elif score >= 80:
-    print('B')
-elif score >= 70:
-    print('C')
-else:
-    print('F')
-print()
-
 # 몇 자리 수인지 구하는 프로그램
 x2 = 10
 if x2 < 10:
@@ -55,41 +27,6 @@ elif x2 < 100:
 else:
     print("세 자리 수 ")
 print()
-
-# number의 범위를 출력하는 프로그램
-number = 10
-if number > 20:
-    print("number가 20보다 큽니다.")
-elif number < 15:
-    print("number가 15보다 작습니다.")
-elif number > 5 and number < 15:
-    print('number가 5보다 크거나 15보다 작습니다.')
-elif number > 100 or number == 10:
-    print("number가 100보다 크거나 또는 number의 값이 10입니다. ")
-elif not number > 100:
-    print("number가 100ㅂ다 큰 경우가 아닌 경우 출력합니다. ")
-print()
-
-# 예제1. 점수가 60점 이상이면 "합격"을 출력하고, 미만이면 "불합격"을 출력
-score = 60
-if score >= 60:
-    print("합격")
-else:
-    print("불합격")
-
-# 문제1. 정수를 1개 입력받아서, 60점 이상이면 합격, 미만이면 불합격
-a = int(input("정수 입려 : "))
-if a >= 60:
-    print("합격")
-else:
-    print("불합격")
-
-# 문제2. 정수를 1개 입력받아서, 그 수가 짝수인지 홀수인지
-b = int(input("정수 입력 : "))
-if b & 2 == 0:
-    print("짝수")
-else:
-    print("홀수")
 
 # 아이디와 패스워드를 입력받아
 # id, pw 모두 일치하면, "(id)님이 로그인 하셨습니다" 출력
@@ -103,32 +40,6 @@ if id == db_id and pw == db_pw:
 else:
     print("아이디와 비밀번호를 확인해주세요.")
 print()
-
-# 문제4. 점수를 입력받아 90 ~ 100점이면 "수", 80 ~ 90 "우", 70 ~ 79 "미"
-scr = int(input("점수 입력 : "))
-if scr >= 90:
-    print("수")
-elif scr >= 80:
-    print("우")
-elif scr >= 70:
-    print("미")
-else:
-    print("재시험")
-
-# 3. 쌍(홑)따옴표로 3개로 둘러싼다.
-print("""hello
-python
-""")
-
-# """입력하면 줄 바꿈 가능
-memo = """hello
-p
-y
-t
-h
-o
-n"""
-print(memo)
 
 # 문자열 연산
 # 1. 문자열 연결하기 : +
@@ -147,12 +58,6 @@ print(a*10)
 a = "Korea IT"
 print(a[0], a[1], a[2], a[3], a[4], [5], a[6], a[7])
 # 공백도 문자로 인식한다.
-
-# 2.문제
-# hello 문자를 입력받아서, olleh로 출력해보자
-b = input("hello 입력 : ")
-print(b)
-print(b[4], b[3], b[2], b[1], b[0])
 
 # 문자열 슬라이싱
 a = "Korea Academy"
@@ -224,11 +129,6 @@ for i in range(2, i):
             break
     if(prime_yes):
         print(i, end=' ')
-
-# 1부터 10까지의 숫자를 모두 더한 값
-for i in range(1, 11):
-    sum += i
-print(sum)
 
 # 2~9 사이의 숫자 입력 후 해당 수의 구구단
 digit = int(input())
